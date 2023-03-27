@@ -1,0 +1,97 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+}
+
+#currentDay {
+  font-size: 2rem;
+}
+
+/* Timeblocks */
+.time-block {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.past {
+  background-color: #d9d9d9;
+}
+
+.present {
+  background-color: #ff6961;
+}
+
+.future {
+  background-color: #77dd77;
+}
+
+/* Hour */
+.hour {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Description */
+.description {
+  flex-grow: 1;
+  height: 50px;
+  font-size: 1.5rem;
+  border: none;
+}
+
+/* Save button */
+.saveBtn {
+  flex-basis: 80px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.saveBtn:hover {
+  background-color: #0069d9;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .time-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hour {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    flex-basis: calc(100% - 90px);
+  }
+
+  .saveBtn {
+    flex-basis: 80px;
+    margin-top: 10px;
+  }
+}
